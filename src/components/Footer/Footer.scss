@@ -1,27 +1,31 @@
 @import "../../assets/style/index.scss";
 
-
 #sectionContact {
-  padding: 20px 20px 0;
+ padding: 0 150px;
+ width: 100%;
   @include display-style;
   flex-direction: column;
   gap: 30px;
+  h2 {
+    @include style-h2;
+  }
   .infos {
     @include display-style;
-    justify-content: space-between;
+    justify-content: space-around;
+
     .emailContainer {
       width: 500px;
     }
-    .reseauxContainer {
-      width: 500px;
-      .iconEnveloppe {
-        font-size: 30px;
-        cursor: pointer;
-      }
-      .iconGithub {
-        margin: 15px 15px 0 0;
-        font-size: 30px;
-        color: black;
+    .socialIcons {
+      max-width: 500px;
+      gap: 30px;
+      a {
+        color: $color-icon;
+        font-size: 32px;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          color: $color-text;
+        }
       }
     }
   }

@@ -28,7 +28,6 @@ const Home = () => {
             <div id="sectionContact">
                 <Footer />
             </div>
-
         </div>
     );
 };

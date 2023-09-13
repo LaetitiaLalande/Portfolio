@@ -18,6 +18,7 @@ const About = () => {
                 <img src={Selfie} className="profilImage" alt="selfie Laetitia Lalande" />
                 </div>
             </div>
+                
         </div>
     )
 }

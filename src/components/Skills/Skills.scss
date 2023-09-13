@@ -6,9 +6,7 @@
   }
   
   .skills-container h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    @include style-h2;
   }
   
   .skills-container .grid-skills {

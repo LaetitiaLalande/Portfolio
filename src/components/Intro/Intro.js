@@ -1,39 +1,23 @@
 import React from 'react';
 import "../Intro/Intro.scss";
-import Selfie from "../../assets/images/selfie.jpg";
+import { FaGithub } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+
 
 const Intro = () => {
     return (
         <div className="introContainer">
             <div className="introText">
-                <h1>Salut, je suis Laëtitia Lalande 👋</h1>
-                <p>
+                <h1>Bonjour, je suis Laëtitia Lalande 👋</h1>
+                <p className="typing-effect">
                     Et voici mon Portfolio de Développeuse Web Junior
                 </p>
-                <div className="social-icons">
-                    <a
-                        href="https://twitter.com/olawanle_joel"
-                        aria-label="Twitter"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <i className="fa-brands fa-twitter"></i>
+                <div className="socialIcons">
+                    <a href="https://github.com/LaetitiaLalande" target="_blank" rel="noopener noreferrer">
+                        <FaGithub className='iconGithub' />
                     </a>
-                    <a
-                        href="https://github.com/olawanlejoel"
-                        aria-label="GitHub"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <i className="fa-brands fa-github"></i>
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/olawanlejoel/"
-                        aria-label="LinkedIn"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <i className="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/laetitia-lalande-6a60a9259" target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin />
                     </a>
                 </div>
                 <hr />

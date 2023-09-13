@@ -27,10 +27,17 @@ body {
 $color-bg: #1d1e20;
 $color-principale: white;
 $color-secondaire: #ffcc1a;
+$color-icon:#9b9c9d;
 $color-text: #dadadb;
 
 @mixin display-style {
   display: flex;
+}
+
+@mixin style-h2{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 768px) {

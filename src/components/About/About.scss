@@ -2,11 +2,10 @@
 
 /* About */
 .aboutContainer {
-  padding: 100px 0;
+  padding: 50px 0;
   h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    @include style-h2;
+    margin: 0;
   }
   .about {
     @include display-style;

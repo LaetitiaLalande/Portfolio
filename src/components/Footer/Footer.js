@@ -12,21 +12,21 @@ const Footer = () => {
     window.location.href = `mailto:${email}`;
   };
   return (
-    <div id="sectionContact">
+    <div className="sectionContact">
       <hr />
       <h2>Me Contacter</h2>
       <div className='infos'>
         <div className='emailContainer'>
           <p>Besoin de me contacter ? Vous pouvez me joindre par email en cliquant sur l'icône ci-dessous :</p>
           <FaEnvelope onClick={handleClick} className='iconEnveloppe' />
-      {/* <div className='separation'></div> */}
+          {/* <div className='separation'></div> */}
         </div>
-        <div className='reseauxContainer'>
+        <div className='socialIcons'>
           <p>Retrouvez-moi également sur :</p>
           <a href="https://github.com/LaetitiaLalande" target="_blank" rel="noopener noreferrer">
             <FaGithub className='iconGithub' />
           </a>
-          <a href="https://www.linkedin.com/in/votre-profil-linkedin" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/laetitia-lalande-6a60a9259" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
         </div>
