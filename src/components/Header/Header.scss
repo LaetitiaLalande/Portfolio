@@ -1,0 +1,26 @@
+@import "../../assets/style/index.scss";
+
+.headerContainer {
+  @include display-style;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  //   border: 1px solid black;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgba(29, 30, 32, 0.9);
+  height: 50px;
+  padding: 25px;
+  ul {
+    @include display-style;
+    gap: 50px;
+    a {
+      color: $color-principale;
+      &:hover{
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+}
