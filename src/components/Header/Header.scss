@@ -18,7 +18,7 @@
     a {
       color: $color-principale;
       &:hover{
-        border-bottom: 1px solid white;
+        border-bottom: 2px solid $underline-color;
       }
     }
   }

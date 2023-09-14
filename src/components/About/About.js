@@ -5,7 +5,7 @@ import Selfie from "../../assets/images/selfie.jpg";
 const About = () => {
     return (
         <div className="aboutContainer">
-            <h2>A propos de moi</h2>
+            <h2 class="overlinedTitle">A propos de moi</h2>
             <div className="about">
                 <div className="aboutText">
                     <p>

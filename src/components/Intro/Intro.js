@@ -1,14 +1,12 @@
 import React from 'react';
 import "../Intro/Intro.scss";
-import { FaGithub } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
-
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Intro = () => {
     return (
         <div className="introContainer">
             <div className="introText">
-                <h1>Bonjour, je suis Laëtitia Lalande 👋</h1>
+                <h1 class="animated-title" >Bonjour <span className="handEmojiContainer"><div className="handEmoji">👋</div></span> , je suis Laëtitia Lalande </h1>
                 <p className="typing-effect">
                     Et voici mon Portfolio de Développeuse Web Junior
                 </p>

@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
@@ -26,18 +26,52 @@ body {
 
 $color-bg: #1d1e20;
 $color-principale: white;
-$color-secondaire: #ffcc1a;
-$color-icon:#9b9c9d;
+$color-icon: #9b9c9d;
 $color-text: #dadadb;
+$underline-color: #fedc2a;
 
 @mixin display-style {
   display: flex;
 }
 
-@mixin style-h2{
+p,
+h3,
+h1 {
+  cursor: context-menu;
+}
+
+@mixin style-icon {
+  font-size: 32px;
+  transition: all 0.5s ease-in-out;
+  color: $color-icon;
+  cursor: pointer;
+  &:hover {
+    color: $color-text;
+  }
+}
+
+@mixin style-h2 {
+  margin-bottom: 15px;
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  cursor: context-menu;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-shadow: -2px 1px 0 #000;
+  &:before {
+    background: $underline-color;
+    bottom: 0.25em;
+    content: "";
+    height: 10px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: auto;
+    transform: scale(0.9) skew(-25deg);
+    z-index: -1;
+    width: 150px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -46,19 +80,3 @@ $color-text: #dadadb;
     padding: 0 2rem;
   }
 }
-
-// .cta-btn {
-//   background-color: #ffcc1a;
-//   color: #1d1e20;
-//   padding: 0.5rem 1rem;
-//   border-radius: 5px;
-//   font-size: 1rem;
-//   font-weight: 600;
-//   transition: all 0.5s ease-in-out;
-//   cursor: pointer;
-//   display: inline-block;
-// }
-
-// .cta-btn:hover {
-//   background-color: #dadadb;
-// }

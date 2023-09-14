@@ -1,34 +1,35 @@
 import React from 'react';
 import "../Skills/Skills.scss";
+import { FaReact, FaHtml5, FaCss3, FaJs, FaNodeJs, FaDatabase } from 'react-icons/fa';
 
 const Skills = () => {
     return (
-        <div className="skills-container">
+        <div className="skillsContainer">
             <h2>Compétences</h2>
-            <div className="grid-skills">
-                <div className="skill-card html">
-                    <i className="fa-brands fa-html5 html-icon"></i>
+            <div className="skills">
+                <div className="skillCard html">
+                <FaHtml5 className='iconSkill'/>
                     <p>HTML</p>
                 </div>
-                <div className="skill-card css">
-                    <i className="fa-brands fa-css3-alt css-icon"></i>
+                <div className="skillCard css">
+                <FaCss3 className='iconSkill'/>
                     <p>CSS</p>
                 </div>
-                <div className="skill-card js">
-                    <i className="fa-brands fa-js-square js-icon"></i>
+                <div className="skillCard js">
+                <FaJs className='iconSkill'/>
                     <p>JavaScript</p>
                 </div>
-                <div className="skill-card react">
-                    <i className="fa-brands fa-react react-icon"></i>
+                <div className="skillCard react">
+                <FaReact className='iconSkill'/>
                     <p>React</p>
                 </div>
-                <div className="skill-card node">
-                    <i className="fa-brands fa-node-js node-icon"></i>
-                    <p>Node</p>
+                <div className="skillCard node">
+                <FaNodeJs className='iconSkill'/>
+                    <p>NodeJS</p>
                 </div>
-                <div className="skill-card python">
-                    <i className="fa-brands fa-python python-icon"></i>
-                    <p>Python</p>
+                <div className="skillCard mongoDB">
+                <FaDatabase className='iconSkill'/>
+                    <p>MongoDB</p>
                 </div>
             </div>
         </div>

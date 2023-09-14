@@ -6,7 +6,7 @@
   h2 {
     @include style-h2;
     margin: 0;
-  }
+    }
   .about {
     @include display-style;
     justify-content: space-between;

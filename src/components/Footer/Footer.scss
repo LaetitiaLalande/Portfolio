@@ -1,8 +1,8 @@
 @import "../../assets/style/index.scss";
 
 #sectionContact {
- padding: 0 150px;
- width: 100%;
+  padding: 0 150px;
+  width: 100%;
   @include display-style;
   flex-direction: column;
   gap: 30px;
@@ -14,18 +14,24 @@
     justify-content: space-around;
 
     .emailContainer {
-      width: 500px;
+      width: 50%;
+      text-align: center;
+      p {
+        margin-bottom: 20px;
+      }
+      .iconEnveloppe {
+        @include style-icon;
+      }
     }
     .socialIcons {
-      max-width: 500px;
-      gap: 30px;
+      width: 50%;
+      text-align: center;
+      p {
+        margin-bottom: 20px;
+      }
       a {
-        color: $color-icon;
-        font-size: 32px;
-        transition: all 0.5s ease-in-out;
-        &:hover {
-          color: $color-text;
-        }
+        margin: 15px;
+        @include style-icon;
       }
     }
   }

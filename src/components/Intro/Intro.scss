@@ -16,6 +16,18 @@
     text-align: center;
     margin: 20px 0;
     width: 80%;
+    .handEmojiContainer {
+      display: inline-block;
+      position: relative;
+      .handEmoji {
+        font-size: 32px;
+        animation: wave 1s infinite linear;
+        transform-origin: bottom;
+      }
+    }
+    h1 {
+      font-size: 32px;
+    }
     p {
       font-size: 22px;
       margin-bottom: 20px;
@@ -26,12 +38,7 @@
       align-items: center;
       gap: 30px;
       a {
-        color: $color-icon;
-        font-size: 32px;
-        transition: all 0.5s ease-in-out;
-        &:hover {
-          color: $color-text;
-        }
+        @include style-icon;
       }
     }
   }
@@ -43,15 +50,10 @@
   }
 }
 
-// effet typing
-$small-font-size: 16px;
-$large-font-size: 24px;
-
 .typing-effect {
-  font-size: $large-font-size;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+  animation: typing 3s steps(30, end), blink-caret 0.5s;
 }
 
 @keyframes typing {
@@ -70,5 +72,21 @@ $large-font-size: 24px;
   }
   50% {
     border-right: 2px solid #000;
+  }
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(15deg);
   }
 }

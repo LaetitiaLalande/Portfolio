@@ -12,7 +12,7 @@ const Collapses = (props) => {
     return (
         <div className="collapse">
             <div className="collapseHeader">
-                <h2>{props.title}</h2>
+                <h3>{props.title}</h3>
                 <div className={`fa-chevron-up ${isOpenCollapse ? "rotated" : ""}`}>
                     <FaChevronUp onClick={toggleCollapse} />
                 </div>
