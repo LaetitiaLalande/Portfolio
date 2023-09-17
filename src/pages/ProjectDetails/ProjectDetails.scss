@@ -1,12 +1,11 @@
 @import "../../assets/style/index.scss";
 
 .ProjectDetailContainer {
-  position: relative;
   .linkToHome {
     color: $color-text;
     position: absolute;
     font-weight: 600;
-    top: 20px; 
+    top: 20px;
     right: 30px;
   }
   .mainProjectDetail {

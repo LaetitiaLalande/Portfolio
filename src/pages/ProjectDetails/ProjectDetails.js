@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { projectData } from '../../components/Data/DataProjects.js';
+import { DataProjects } from '../../components/Data/DataProjects.js';
 import "../ProjectDetails/ProjectDetails.scss";
 import Footer from '../../components/Footer/Footer';
 import Collapses from '../../components/Collapses/Collapses';
 
 const ProjectDetails = () => {
     const { id } = useParams();
-    const project = projectData.find((project) => project.id === Number(id));
+    const project = DataProjects.find((project) => project.id === Number(id));
 
     if (!project) {
         return <div>Projet non trouvé</div>;
@@ -15,7 +15,9 @@ const ProjectDetails = () => {
 
     return (
         <div className='ProjectDetailContainer'>
-            <Link to="/" className='linkToHome'>Retour à l'accueil</Link>
+            <div className='headerContainer'>
+                <Link to="/" className='linkToHome'>Retour à l'accueil</Link>
+            </div>
             <div className='mainProjectDetail'>
                 <h2>{project.title}</h2>
                 <div className="infosContainer">

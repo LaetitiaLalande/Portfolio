@@ -27,7 +27,11 @@ const SkillModal = (props) => {
           <div className="modalContent ">
             <FaTimes className="btnClose" onClick={toggleModal} />
             <h2>{props.name}</h2>
-            <p>{props.description}</p>
+            <ul>
+              {props.description.map((listDescription, index) => (
+                <li key={index}>{listDescription}</li>
+              ))}
+            </ul>
           </div>
         </div>
       )}

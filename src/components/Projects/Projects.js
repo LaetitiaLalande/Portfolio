@@ -1,6 +1,6 @@
 import React from 'react';
 import "../Projects/Projects.scss";
-import { projectData } from '../Data/DataProjects.js';
+import { DataProjects } from '../Data/DataProjects.js';
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
@@ -10,7 +10,7 @@ const Projects = () => {
             <h2>Mes projets</h2>
 
             <div className="projectsGallery">
-                {projectData.map((project) => (
+                {DataProjects.map((project) => (
                     <div className="projectCard" key={project.id}>
                         <h3>{project.title}</h3>
                         <img src={project.image} alt="capture écran projet" />
