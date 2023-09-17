@@ -1,53 +1,31 @@
 @import "../../assets/style/index.scss";
 
 .collapse {
-  margin: 20px auto ;
-  width: 70%;
-
-  .collapseHeader {
-    @include display-style();
-    justify-content: space-between;
-    color: $color-text;
-    background-color: $color-principale;
-    padding: 10px 15px;
-    border-radius: 5px;
-    height: 52px;
-    h3 {
-      color: $color-bg;
-      font-size: 24px;
-      font-weight: 600;
-    }
-  }
-  .fa-chevron-up {
-    color: $color-bg;
-    transform: rotate(0);
-    transition: transform 0.5s;
+  width: 100%;
+  margin-bottom: 150px;
+  h3 {
+    color: $color-principale;
+    font-weight: 600;
     cursor: pointer;
-    height: 24px;
-    &.rotated {
-      transform: rotate(-180deg);
-    }
+    @include style-icon;
   }
-  .content {
-    height: 0;
-    border-radius: 0 0 5px 5px;
+}
+.content {
+  height: 0;
+  border-radius: 0 0 5px 5px;
+  color: $color-text;
+  visibility: hidden;
+  p,
+  ul {
+    padding: 10px 20px 20px;
+  }
+  p,
+  li {
+    font-size: 14px;
+    font-weight: 600;
     color: $color-text;
-    transition: transform 0.3s ease-in-out;
-    transform: scaleY(0);
-    transform-origin: top;
-    p,
-    ul {
-      padding: 10px 20px 20px;
-    }
-    p,
-    li {
-      font-size: 14px;
-      font-weight: 600;
-      color: $color-text;
-    }
-    &.expanded {
-      height: auto;
-      transform: scaleY(1);
-    }
+  }
+  &.expanded {
+    visibility: visible;
   }
 }

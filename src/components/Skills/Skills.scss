@@ -6,48 +6,25 @@
   h2 {
     @include style-h2;
   }
-  .skills {
+  .skillsGallery {
     @include display-style;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
-    .skillCard {
-      @include display-style;
-      width: 25%;
-      background-color: $color-text;
-      color: $color-bg;
-      justify-content: center;
-      align-items: center;
-      gap: 0 20px;
-      padding: 20px;
-      border-radius: 10px;
-      transition: all 0.5s ease-in-out;
+    gap: 20px;
       .iconSkill {
-        font-size: 30px;
+        font-size: 15px;
+        cursor: pointer;
+        svg{
+          padding: 0;
+          margin: 10px;
+          @include style-icon;
+        }
       }
-      &.html:hover {
-        background-color: #e34f26;
-      }
-      &.css:hover {
-        background-color: #264de4;
-      }
-      &.js:hover {
-        background-color: #f7df1e;
-      }
-      &.react:hover {
-        background-color: #61dafb;
-      }
-      &.node:hover {
-        background-color: #339933;
-      }
-      &.mongoDB:hover {
-        background-color: #3776ab;
-      }
-    }
+ 
   }
 }
 
-@media screen and (max-width: 768px) {
-  .skillsContainer .skills {
-  }
-}
+// @media screen and (max-width: 768px) {
+//   .skillsContainer .skills {
+//   }
+// }

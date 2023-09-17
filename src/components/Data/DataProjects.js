@@ -24,7 +24,7 @@ export const projectData = [
       "CSS",
       "Javascript"
     ],
-    visitSite: 'https://laetitialalande.github.io/Projet3_SophieBluel/',
+    visitSite: ' ',
     gitHubLink: "https://github.com/LaetitiaLalande/Projet3_SophieBluel.git",
   },
   {
@@ -56,7 +56,7 @@ export const projectData = [
       "ReactJS",
       "SASS"
     ],
-    visitSite: 'https://laetitialalande.github.io/Kasa/',
+    visitSite: ' ',
     gitHubLink: "https://github.com/LaetitiaLalande/Kasa.git",
   },
   {
@@ -75,7 +75,7 @@ export const projectData = [
       "ExpressJS",
       "MongoDB"
     ],
-    visitSite: 'https://laetitialalande.github.io/MonVieuxGrimoire/',
+    visitSite: ' ',
     gitHubLink: "https://github.com/LaetitiaLalande/MonVieuxGrimoire.git",
   },
 ];

@@ -46,18 +46,17 @@ h1 {
   color: $color-icon;
   cursor: pointer;
   &:hover {
-    color: $color-text;
+    color: $underline-color;
   }
 }
 
 @mixin style-h2 {
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   font-size: 2rem;
   font-weight: 600;
   cursor: context-menu;
   display: inline-block;
   position: relative;
-  z-index: 1;
   text-shadow: -2px 1px 0 #000;
   &:before {
     background: $underline-color;

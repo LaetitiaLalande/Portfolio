@@ -6,7 +6,6 @@ const Footer = () => {
   const email = 'laetitia2288@gmail.com';
 
   const handleClick = () => {
-    // mailto: pour ouvrir le client de messagerie par défaut de l'utilisateur
     window.location.href = `mailto:${email}`;
   };
   return (

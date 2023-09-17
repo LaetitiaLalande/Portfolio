@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div>
             <Header />
-            <div className='main'>
+            <div className='mainHome'>
                 <section className='sectionIntro'>
                     <Intro />
                 </section>

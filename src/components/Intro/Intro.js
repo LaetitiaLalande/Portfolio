@@ -6,8 +6,8 @@ const Intro = () => {
     return (
         <div className="introContainer">
             <div className="introText">
-                <h1 class="animated-title" >Bonjour <span className="handEmojiContainer"><div className="handEmoji">👋</div></span> , je suis Laëtitia Lalande </h1>
-                <p className="typing-effect">
+                <h1>Bonjour <span className="handEmojiContainer"><div className="handEmoji">👋</div></span> , je suis Laëtitia Lalande </h1>
+                <p>
                     Et voici mon Portfolio de Développeuse Web Junior
                 </p>
                 <div className="socialIcons">
@@ -18,7 +18,7 @@ const Intro = () => {
                         <FaLinkedin />
                     </a>
                 </div>
-                <hr />
+                <hr className='hrIntro' />
             </div>
         </div>
     )

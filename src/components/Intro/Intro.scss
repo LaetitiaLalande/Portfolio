@@ -6,16 +6,9 @@
   align-items: center;
   flex-direction: column;
   height: 250px;
-  //   .avatarIntro {
-  //     width: 200px;
-  //     height: 200px;
-  //     border-radius: 50%;
-  //     object-fit: cover;
-  //   }
   .introText {
     text-align: center;
     margin: 20px 0;
-    width: 80%;
     .handEmojiContainer {
       display: inline-block;
       position: relative;
@@ -31,6 +24,9 @@
     p {
       font-size: 22px;
       margin-bottom: 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 3s steps(30, end), blink-caret 0.5s;
     }
     .socialIcons {
       @include display-style;
@@ -48,12 +44,6 @@
   .introContainer .introText {
     width: 100%;
   }
-}
-
-.typing-effect {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(30, end), blink-caret 0.5s;
 }
 
 @keyframes typing {
