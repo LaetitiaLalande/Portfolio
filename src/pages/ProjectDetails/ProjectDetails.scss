@@ -2,7 +2,7 @@
 
 .ProjectDetailContainer {
   .linkToHome {
-    color: $color-text;
+    color: $color-principale;
     position: absolute;
     font-weight: 600;
     top: 20px;
@@ -29,10 +29,11 @@
       gap: 25px;
       align-items: center;
       img {
+        border: 1px solid $color-bg;
         border-radius: 5px;
         height: 400px;
         object-fit: cover;
-        width: 80%;
+        width: 50%;
       }
     }
     .linkSite {

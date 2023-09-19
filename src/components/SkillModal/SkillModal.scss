@@ -3,7 +3,7 @@
 .skillCard {
   @include display-style;
   width: 40%;
-  background-color: $color-text;
+  background: $color-bg;
   color: $color-bg;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,6 @@
       width: 40%;
       h2 {
         @include style-h2;
-        color: $color-text;
         z-index: 1;
       }
       li {

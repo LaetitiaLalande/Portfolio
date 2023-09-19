@@ -4,6 +4,7 @@ import { DataProjects } from '../../components/Data/DataProjects.js';
 import "../ProjectDetails/ProjectDetails.scss";
 import Footer from '../../components/Footer/Footer';
 import Collapses from '../../components/Collapses/Collapses';
+import CarouselProject from '../../components/Carousel/Carousel.js';
 
 const ProjectDetails = () => {
     const { id } = useParams();
@@ -20,24 +21,33 @@ const ProjectDetails = () => {
             </div>
             <div className='mainProjectDetail'>
                 <h2>{project.title}</h2>
+
                 <div className="infosContainer">
+
                     <div className='photoLinkContainer'>
-                        <img src={project.image} alt="projet capture ecran" />
+                        {/* <img src={project.image} alt="projet capture ecran" /> */}
+                        <CarouselProject images={project.imageCarousel} />
                         <div className='linkSite'>
-                            <a href={project.visitSite} target="_blank" rel="noopener noreferrer">Visiter le site</a>
+                            {project.visitSite.trim() !== '' && (
+                                <a href={project.visitSite} target="_blank" rel="noopener noreferrer">
+                                    Visiter le site
+                                </a>
+                            )}
                             <a href={project.gitHubLink} target="_blank" rel="noopener noreferrer">Lien Github</a>
                         </div>
                     </div>
+
                     <div className="collapseContainer">
                         <Collapses title="Objectif" objectif={project.objectif} >
                             <p>{project.objectif}</p>
                         </ Collapses>
                         <Collapses title="Stack Technique">
                             <ul>
-                                {project.stack.map((elem) => <li>{elem}</li>)}
+                                {project.stack.map((elem, index) => <li key={index}>{elem}</li>)}
                             </ul>
                         </ Collapses>
                     </div>
+
                 </div>
 
             </div>

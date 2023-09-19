@@ -6,14 +6,20 @@
   h2 {
     @include style-h2;
     margin: 0;
-    }
+  }
   .about {
     @include display-style;
     justify-content: space-between;
     align-items: center;
-    gap: 0 2rem;
+    gap: 0 50px;
     .aboutText {
       width: 50%;
+      a {
+        color: $color-text;
+        &:hover {
+          color: $underline-color;
+        }
+      }
       p {
         font-size: 1rem;
         font-weight: 400;
@@ -23,8 +29,9 @@
     .aboutImage {
       width: 50%;
       .profilImage {
+        margin: auto;
         overflow: hidden;
-        width: 100%;
+        width: 80%;
         height: 400px;
         object-fit: cover;
         border: 2px solid $color-text;

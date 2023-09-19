@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 142.6%;
@@ -11,10 +11,16 @@
   text-decoration: none;
 }
 
+$color-bg: #f5f5f7;
+$color-principale: white;
+$color-icon: #9b9c9d;
+$color-text: #909eac;
+$underline-color: #239eba;
+
 body {
   font-size: 16px;
-  background-color: #1d1e20;
-  color: #dadadb;
+  background-color: $color-principale;
+  color: $color-text;
 }
 
 #root {
@@ -24,12 +30,6 @@ body {
   margin: auto;
 }
 
-$color-bg: #1d1e20;
-$color-principale: white;
-$color-icon: #9b9c9d;
-$color-text: #dadadb;
-$underline-color: #fedc2a;
-
 @mixin display-style {
   display: flex;
 }
@@ -38,6 +38,10 @@ p,
 h3,
 h1 {
   cursor: context-menu;
+}
+
+a:visited {
+  color: $color-text;
 }
 
 @mixin style-icon {
@@ -57,9 +61,10 @@ h1 {
   cursor: context-menu;
   display: inline-block;
   position: relative;
-  text-shadow: -2px 1px 0 #000;
+  text-shadow: -2px 1px 0 #e2e8ec;
+  color: $underline-color;
   &:before {
-    background: $underline-color;
+    background: $color-text;
     bottom: 0.25em;
     content: "";
     height: 10px;

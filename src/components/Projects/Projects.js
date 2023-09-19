@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../Projects/Projects.scss";
 import { DataProjects } from '../Data/DataProjects.js';
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
+    const [showOverlay, setShowOverlay] = useState(false);
+
+    const toggleOverlay = () => {
+        setShowOverlay(!showOverlay);
+    };
 
     return (
         <div className="projectsContainer">
@@ -13,10 +18,21 @@ const Projects = () => {
                 {DataProjects.map((project) => (
                     <div className="projectCard" key={project.id}>
                         <h3>{project.title}</h3>
-                        <img src={project.image} alt="capture écran projet" />
-                        <Link to={`/projet/${project.id}`} className="btnInfos">
-                            En savoir plus
-                        </Link>
+                        <div className="projectImageContainer">
+                            <Link to={`/projet/${project.id}`} >
+                            <img
+                                src={project.image}
+                                alt="capture écran projet"
+                                onMouseEnter={toggleOverlay}
+                            />
+                                {showOverlay && (
+                                    <div className="projectOverlay">
+                                        <p>{project.description}</p>
+                                        <p>en savoir plus</p>
+                                    </div>
+                                )}
+                            </Link>
+                        </div>
                     </div>
                 ))}
             </div>
