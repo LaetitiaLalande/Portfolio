@@ -4,7 +4,6 @@ export const DataProjects = [
     title: 'Booki',
     image: '../booki.png',
     imageCarousel: [
-      '../booki.png',
       '../booki1.png',
       '../booki2.png',
     ],
@@ -23,11 +22,10 @@ export const DataProjects = [
     title: 'Sophie Bluel',
     image: '../sophie-bluel.png',
     imageCarousel: [
-      '../sophie-bluel.png',
-      '../sophie4.png',
       '../sophie1.png',
       '../sophie2.png',
       '../sophie3.png',
+      '../sophie4.png',
     ],
     description: 'Projet 2 - Formation Développeur Web OpenClassrooms',
     objectif: "L'objectif de ce projet était de créer une page web dynamique avec JavaScript en manipulant les éléments du DOM, en récupérant les données utilisateurs dans le JavaScript via des formulaires et en gérant les événements utilisateurs",
@@ -42,10 +40,11 @@ export const DataProjects = [
   {
     id: 3,
     title: 'Nina Carducci',
-    image: '../ninaCarducci.png',
+    image: '../nina.jpg',
     imageCarousel: [
-      '../booki.png',
-      '../SophieBluel.png',
+      '../nina1.png',
+      '../nina2.png',
+      '../nina3.png',
     ],
     description:
       'Projet 3 - Formation Développeur Web OpenClassrooms',
@@ -65,8 +64,10 @@ export const DataProjects = [
     title: 'Kasa',
     image: '../kasa.png',
     imageCarousel: [
-      '../booki.png',
-      '../SophieBluel.png',
+      '../kasa1.png',
+      '../kasa2.png',
+      '../kasa3.png',
+      '../kasa4.png',
     ],
     description:
       'Projet 4 - Formation Développeur Web OpenClassrooms',
@@ -84,8 +85,12 @@ export const DataProjects = [
     title: 'Mon Vieux Grimoire',
     image: '../monVieuxGrimoire.png',
     imageCarousel: [
-      '../booki.png',
-      '../SophieBluel.png',
+      '../MVG1.png',
+      '../MVG2.png',
+      '../MVG3.png',
+      '../MVG4.png',
+      '../MVG5.png',
+      '../MVG6.png',
     ],
     description:
       'Projet 5 - Formation Développeur Web OpenClassrooms',

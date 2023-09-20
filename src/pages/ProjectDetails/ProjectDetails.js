@@ -25,8 +25,7 @@ const ProjectDetails = () => {
                 <div className="infosContainer">
 
                     <div className='photoLinkContainer'>
-                        {/* <img src={project.image} alt="projet capture ecran" /> */}
-                        <CarouselProject images={project.imageCarousel} />
+                        <CarouselProject images={project.imageCarousel}/>
                         <div className='linkSite'>
                             {project.visitSite.trim() !== '' && (
                                 <a href={project.visitSite} target="_blank" rel="noopener noreferrer">

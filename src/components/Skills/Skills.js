@@ -9,10 +9,10 @@ const Skills = () => {
         <div className="skillsContainer">
             <h2>Mes Compétences</h2>
             <div className="skillsGallery">
-                    {DataSkills.map((skill) => (
-                        <SkillModal key={skill.id} icon={skill.icon} name={skill.name} description={skill.description} />
-                    ))}
-                </div>
+                {DataSkills.map((skill) => (
+                    <SkillModal key={skill.id} title={skill.title} icons={skill.icon} name={skill.name} description={skill.description} />
+                ))}
+            </div>
         </div>
     );
 };

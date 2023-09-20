@@ -34,6 +34,13 @@ body {
   display: flex;
 }
 
+@mixin style-section {
+  padding: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  background-color: $color-bg;
+}
+
 p,
 h3,
 h1 {
@@ -55,12 +62,12 @@ a:visited {
 }
 
 @mixin style-h2 {
+  position: relative;
   margin-bottom: 40px;
   font-size: 2rem;
   font-weight: 600;
   cursor: context-menu;
   display: inline-block;
-  position: relative;
   text-shadow: -2px 1px 0 #e2e8ec;
   color: $underline-color;
   &:before {

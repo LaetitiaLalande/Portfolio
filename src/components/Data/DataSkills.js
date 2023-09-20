@@ -1,9 +1,12 @@
-import { FaReact, FaHtml5, FaCss3, FaJs, FaNodeJs, FaDatabase, FaServer, FaCog, FaArrowUp } from 'react-icons/fa';
-
 export const DataSkills = [
   {
     id: 1,
-    icon: [<FaHtml5 />, < FaCss3 />],
+    title: 'Intégration Web',
+    icon: [
+      "../htmlIcon.png",
+      "../css.png",
+      "../sassIcon.png",
+    ],
     name: 'HTML, CSS, SASS',
     description: [
       "Intégrer du contenu conformément à une maquette",
@@ -13,7 +16,11 @@ export const DataSkills = [
   },
   {
     id: 2,
-    icon: [<FaReact />, < FaJs />],
+    title: 'Developpement FrontEnd',
+    icon:[
+      "../js.png",
+      "../React-icon.svg.png",
+    ],
     name: 'Javscript, React',
     description:
       [
@@ -26,7 +33,11 @@ export const DataSkills = [
   },
   {
     id: 3,
-    icon: [<FaNodeJs />, <FaServer />, < FaDatabase />],
+    title: 'Developpement BackEnd',
+    icon: [
+      "../NodeIcon.png",
+      "../mongoDB.png",
+    ],
     name: 'NodeJS, ExpressJS, MongoDB',
     description:
       [
@@ -39,7 +50,11 @@ export const DataSkills = [
   },
   {
     id: 4,
-    icon: [<FaCog />, <FaArrowUp />],
+    title: 'Optimisation',
+    icon: [
+      "../SEO.png",
+      "../optimisationIcon.png",
+    ],
     name: 'SEO, Optimisation',
     description:
       [

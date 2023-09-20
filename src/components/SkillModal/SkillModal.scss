@@ -2,17 +2,30 @@
 
 .skillCard {
   @include display-style;
+  flex-direction: column;
   width: 40%;
-  background: $color-bg;
+  background: linear-gradient(to top, #239eba, transparent);
   color: $color-bg;
   justify-content: center;
   align-items: center;
   gap: 0 20px;
   border-radius: 10px;
+  cursor: pointer;
   h3 {
-    color: $color-bg;
+    color: $underline-color;
     cursor: pointer;
     font-weight: 600;
+  }
+  .iconContainer {
+    @include display-style;
+    align-items: center;
+    gap: 10px;
+    .iconSkill {
+      height: 30px;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
   }
   .modal {
     display: flex;

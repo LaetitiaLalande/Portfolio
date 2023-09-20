@@ -22,18 +22,23 @@
     @include display-style;
     align-items: center;
     width: 100%;
+    @include style-section;
+    gap: 30px;
     .photoLinkContainer {
       @include display-style;
       flex-direction: column;
       width: 100%;
       gap: 25px;
       align-items: center;
+      .carousel-root {
+        width: 400px;
+      }
       img {
         border: 1px solid $color-bg;
         border-radius: 5px;
         height: 400px;
         object-fit: cover;
-        width: 50%;
+        width: auto;
       }
     }
     .linkSite {

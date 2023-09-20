@@ -13,7 +13,7 @@ const CarouselProject = (props) => {
             interval={3000}
         >
             {props.images.map((image, index) => (
-                <div key={index} className='carouselContainer'>
+                <div key={index} className='carouselContainer '>
                     <img src={image} alt="diapo images projet" />
                 </div>
             ))}

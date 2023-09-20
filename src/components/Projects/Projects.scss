@@ -1,7 +1,7 @@
 @import "../../assets/style/index.scss";
 
 .projectsContainer {
-  padding: 2rem 0;
+  @include style-section;
   h2 {
     @include style-h2;
   }

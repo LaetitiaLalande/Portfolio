@@ -20,8 +20,15 @@ const SkillModal = (props) => {
   };
 
   return (
-    <div className="skillCard">
-      <div className='iconSkill' onClick={toggleModal}>{props.icon}</div>
+    <div className="skillCard" onClick={toggleModal}>
+      <h3>{props.title}</h3>
+      <div className='iconContainer'>
+        {props.icons.map((icon, index) => (
+          <div key={index} >
+            <img src={icon} alt="icone Skill" className='iconSkill' />
+          </div>
+        ))}
+        </div>
       {modalOpen && (
         <div className="modal" onClick={outModal}>
           <div className="modalContent ">

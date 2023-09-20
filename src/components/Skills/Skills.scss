@@ -2,7 +2,7 @@
 
 /* Skills */
 .skillsContainer {
-  padding: 32px 0;
+  @include style-section;
   h2 {
     @include style-h2;
   }
@@ -11,16 +11,6 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-      .iconSkill {
-        font-size: 15px;
-        cursor: pointer;
-        svg{
-          padding: 0;
-          margin: 10px;
-          @include style-icon;
-        }
-      }
- 
   }
 }
 
