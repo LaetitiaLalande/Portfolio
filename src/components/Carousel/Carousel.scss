@@ -6,3 +6,20 @@
 .control-arrow {
   display: none;
 }
+
+.carouselContainer {
+  max-height: 500px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carouselContainer {
+    height: 250px;
+  }
+}

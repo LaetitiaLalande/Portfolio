@@ -22,15 +22,11 @@
         @include style-icon;
       }
     }
-    .socialIcons {
+    .contactContainer {
       width: 50%;
       text-align: center;
       p {
         margin-bottom: 20px;
-      }
-      a {
-        margin: 15px;
-        @include style-icon;
       }
     }
   }
@@ -39,6 +35,21 @@
 @media screen and (max-width: 768px) {
   #sectionContact {
     padding: 20px;
+    .infos {
+      flex-direction: column;
+      gap: 10px;
+      .emailContainer {
+        width: 100%;
+        p {
+          margin: 5px;
+        }
+      }
+      .contactContainer {
+        width: 100%;
+        p {
+          margin: 5px;
+        }
+      }
+    }
   }
 }
-

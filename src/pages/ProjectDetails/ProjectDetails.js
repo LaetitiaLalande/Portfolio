@@ -2,9 +2,8 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { DataProjects } from '../../components/Data/DataProjects.js';
 import "../ProjectDetails/ProjectDetails.scss";
-import Footer from '../../components/Footer/Footer';
-import Collapses from '../../components/Collapses/Collapses';
 import CarouselProject from '../../components/Carousel/Carousel.js';
+import IconContact from '../../components/IconContact/IconContact.js';
 
 const ProjectDetails = () => {
     const { id } = useParams();
@@ -13,6 +12,8 @@ const ProjectDetails = () => {
     if (!project) {
         return <div>Projet non trouvé</div>;
     }
+
+
 
     return (
         <div className='ProjectDetailContainer'>
@@ -25,7 +26,25 @@ const ProjectDetails = () => {
                 <div className="infosContainer">
 
                     <div className='photoLinkContainer'>
-                        <CarouselProject images={project.imageCarousel}/>
+
+                        <CarouselProject images={project.imageCarousel} />
+
+                    </div>
+
+                    <div className="detailContainer">
+
+                        <div className='objectifContainer'>
+                            <h3>Objectif</h3>
+                            <p>{project.objectif}</p>
+                        </div>
+
+                        <div className='stackContainer'>
+                            <h3>Stack Technique</h3>
+                            <ul>
+                                {project.stack.map((elem, index) => <li key={index}>{elem}</li>)}
+                            </ul>
+                        </div>
+
                         <div className='linkSite'>
                             {project.visitSite.trim() !== '' && (
                                 <a href={project.visitSite} target="_blank" rel="noopener noreferrer">
@@ -34,24 +53,15 @@ const ProjectDetails = () => {
                             )}
                             <a href={project.gitHubLink} target="_blank" rel="noopener noreferrer">Lien Github</a>
                         </div>
-                    </div>
-
-                    <div className="collapseContainer">
-                        <Collapses title="Objectif" objectif={project.objectif} >
-                            <p>{project.objectif}</p>
-                        </ Collapses>
-                        <Collapses title="Stack Technique">
-                            <ul>
-                                {project.stack.map((elem, index) => <li key={index}>{elem}</li>)}
-                            </ul>
-                        </ Collapses>
+                        
                     </div>
 
                 </div>
 
             </div>
-            <div id="sectionContact">
-                <Footer />
+            <div className="sectionContact">
+                <hr />
+                <IconContact />
             </div>
         </div>
     );

@@ -9,13 +9,13 @@
     right: 30px;
   }
   .mainProjectDetail {
-    margin: 100px 150px;
+    margin: 50px 100px 20px;
     @include display-style;
     flex-direction: column;
     align-items: center;
     h2 {
       @include style-h2;
-      font-size: 50px;
+      font-size: 40px;
     }
   }
   .infosContainer {
@@ -23,23 +23,15 @@
     align-items: center;
     width: 100%;
     @include style-section;
-    gap: 30px;
+    gap: 15px;
+    max-height: 550px;
+    max-width: 80%;
     .photoLinkContainer {
       @include display-style;
       flex-direction: column;
-      width: 100%;
-      gap: 25px;
+      width: 50%;
       align-items: center;
-      .carousel-root {
-        width: 400px;
-      }
-      img {
-        border: 1px solid $color-bg;
-        border-radius: 5px;
-        height: 400px;
-        object-fit: cover;
-        width: auto;
-      }
+      max-height: 500px;
     }
     .linkSite {
       a {
@@ -48,9 +40,25 @@
         font-size: 16px;
       }
     }
-    .collapseContainer {
-      width: 80%;
+    .detailContainer {
+      @include display-style;
+      flex-direction: column;
+      width: 50%;
+      gap: 30px;
+      h3 {
+        font-size: 32px;
+        color: $underline-color;
+      }
+      p,
+      ul {
+        padding: 5px 15px;
+      }
     }
+  }
+  .sectionContact {
+    padding: 0 150px;
+    width: 100%;
+    gap: 30px;
   }
 }
 
@@ -61,22 +69,42 @@
       right: 10px;
     }
     .mainProjectDetail {
-      margin: 40px 20px;
+      margin: 40px 20px 0;
       h2 {
         font-size: 32px;
       }
       .infosContainer {
-        flex-direction: column-reverse;
-        padding: 5px;
+        flex-direction: column;
+        padding: 15px;
+        height: auto;
+        margin-bottom: 20px;
         .photoLinkContainer {
+          width: 90%;
+          height: 50%;
           .carousel-root {
             width: 100%;
+            height: 50%;
           }
           img {
             height: 300px;
           }
         }
+        .detailContainer {
+          width: 100%;
+          gap: 10px;
+          h3 {
+            font-size: 18px;
+          }
+          p,
+          ul {
+            padding: 0 5px;
+            font-size: 12px;
+          }
+        }
       }
+    }
+    .sectionContact {
+      padding: 20px;
     }
   }
 }

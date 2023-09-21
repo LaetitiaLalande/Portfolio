@@ -5,7 +5,6 @@ export const DataProjects = [
     image: '../booki.png',
     imageCarousel: [
       '../booki1.png',
-      '../booki2.png',
     ],
     description:
       'Projet 1 - Formation Développeur Web OpenClassrooms',
@@ -96,10 +95,7 @@ export const DataProjects = [
       'Projet 5 - Formation Développeur Web OpenClassrooms',
     objectif: "L'objectif de ce projet était de développer le back-end du site en implémentant un modèle logique de données conformément à la réglementation, en stockant des données de manière sécurisée et en mettant en œuvre des opérations CRUD de manière sécurisée",
     stack: [
-      "HTML",
-      "CSS",
       "Javascript",
-      "Git",
       "NodeJS",
       "ExpressJS",
       "MongoDB"

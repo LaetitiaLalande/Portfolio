@@ -1,0 +1,12 @@
+@import "../../assets/style/index.scss";
+
+.socialIcons {
+    @include display-style;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+    a,
+    .iconEnveloppe {
+      @include style-icon;
+    }
+  }

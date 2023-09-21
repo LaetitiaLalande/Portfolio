@@ -1,6 +1,7 @@
 import React from 'react';
 import "../Footer/Footer.scss";
-import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope} from 'react-icons/fa';
+import IconContact from '../IconContact/IconContact';
 
 const Footer = () => {
   const email = 'laetitia2288@gmail.com';
@@ -21,14 +22,9 @@ const Footer = () => {
           <FaEnvelope onClick={handleClick} className='iconEnveloppe' />
         </div>
 
-        <div className='socialIcons'>
+        <div className='contactContainer'>
           <p>Retrouvez-moi également sur :</p>
-          <a href="https://github.com/LaetitiaLalande" target="_blank" rel="noopener noreferrer">
-            <FaGithub className='iconGithub' />
-          </a>
-          <a href="https://www.linkedin.com/in/laetitia-lalande-6a60a9259" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin />
-          </a>
+         <IconContact />
         </div>
       </div>
     </div>
