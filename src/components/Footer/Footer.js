@@ -11,7 +11,9 @@ const Footer = () => {
   return (
     <div className="sectionContact">
       <hr />
-      <h2>Me Contacter</h2>
+      <div className='titleContainer'>
+        <h2>Me Contacter</h2>
+      </div>
       <div className='infos'>
 
         <div className='emailContainer'>

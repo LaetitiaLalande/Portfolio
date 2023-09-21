@@ -7,7 +7,9 @@ const Skills = () => {
 
     return (
         <div className="skillsContainer">
-            <h2>Mes Compétences</h2>
+            <div className='titleContainer'>
+                <h2>Mes Compétences</h2>
+            </div>
             <div className="skillsGallery">
                 {DataSkills.map((skill) => (
                     <SkillModal key={skill.id} title={skill.title} icons={skill.icon} name={skill.name} description={skill.description} />

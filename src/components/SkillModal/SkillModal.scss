@@ -71,3 +71,17 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .skillCard {
+    .modal {
+      .modalContent {
+        width: 90%;
+        min-height: 250px;
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}

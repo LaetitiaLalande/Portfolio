@@ -14,7 +14,14 @@
   }
 }
 
-// @media screen and (max-width: 768px) {
-//   .skillsContainer .skills {
-//   }
-// }
+@media screen and (max-width: 768px) {
+  .skillsContainer {
+    padding: 20px;
+    .skillCard {
+      padding: 5px;
+      h3 {
+        display: none;
+      }
+    }
+  }
+}

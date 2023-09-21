@@ -43,6 +43,12 @@
 @media screen and (max-width: 768px) {
   .introContainer .introText {
     width: 100%;
+    h1 {
+      font-size: 24px;
+    }
+    p{
+      font-size: 16px;
+    }
   }
 }
 

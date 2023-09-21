@@ -3,3 +3,9 @@
 .mainHome {
   margin: 80px 100px 100px;
 }
+
+@media screen and (max-width: 768px) {
+  .mainHome{
+    margin: 40px 20px ;
+  }
+}

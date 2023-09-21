@@ -39,6 +39,7 @@ body {
   margin-bottom: 50px;
   border-radius: 10px;
   background-color: $color-bg;
+  box-shadow: 10px 10px 15px 0px #cccece;
 }
 
 p,
@@ -64,7 +65,7 @@ a:visited {
 @mixin style-h2 {
   position: relative;
   margin-bottom: 40px;
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 600;
   cursor: context-menu;
   display: inline-block;
@@ -72,7 +73,7 @@ a:visited {
   color: $underline-color;
   &:before {
     background: $color-text;
-    bottom: 0.25em;
+    bottom: 5px;
     content: "";
     height: 10px;
     left: 0;
@@ -85,9 +86,8 @@ a:visited {
   }
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    width: 100%;
-    padding: 0 2rem;
+@media screen and (max-width: 767px) {
+  .titleContainer {
+    text-align: center;
   }
 }

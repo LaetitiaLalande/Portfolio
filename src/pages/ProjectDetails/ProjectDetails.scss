@@ -53,3 +53,30 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .ProjectDetailContainer {
+    .linkToHome {
+      top: 5px;
+      right: 10px;
+    }
+    .mainProjectDetail {
+      margin: 40px 20px;
+      h2 {
+        font-size: 32px;
+      }
+      .infosContainer {
+        flex-direction: column-reverse;
+        padding: 5px;
+        .photoLinkContainer {
+          .carousel-root {
+            width: 100%;
+          }
+          img {
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+}

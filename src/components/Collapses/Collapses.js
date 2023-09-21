@@ -10,7 +10,7 @@ const Collapses = (props) => {
 
     return (
         <div className="collapse">
-                <h3 onClick={toggleCollapse}>{props.title}</h3>
+            <h3 onClick={toggleCollapse}>{props.title}</h3>
             <div className={`content ${isOpenCollapse ? "expanded" : ""}`}>
                 {props.children}
             </div>

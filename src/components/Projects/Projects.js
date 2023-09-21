@@ -12,8 +12,9 @@ const Projects = () => {
 
     return (
         <div className="projectsContainer">
+            <div className='titleContainer'>
             <h2>Mes projets</h2>
-
+</div>
             <div className="projectsGallery">
                 {DataProjects.map((project) => (
                     <div className="projectCard" key={project.id}>

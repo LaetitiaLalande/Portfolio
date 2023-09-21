@@ -1,11 +1,12 @@
 @import "../../assets/style/index.scss";
 
-/* About */
 .aboutContainer {
   @include style-section;
-  h2 {
-    @include style-h2;
-    margin: 0;
+  .titleContainer {
+    h2 {
+      @include style-h2;
+      margin: 0;
+    }
   }
   .about {
     @include display-style;
@@ -14,21 +15,25 @@
     gap: 0 50px;
     .aboutText {
       width: 50%;
-      a {
-        color: $color-text;
-        &:hover {
-          color: $underline-color;
-          border-bottom: 1px solid $underline-color;
+      .linkPDF {
+        text-align: center;
+        a {
+          color: $color-text;
+          &:hover {
+            color: $underline-color;
+            border-bottom: 1px solid $underline-color;
+          }
         }
       }
       p {
-        font-size: 1rem;
+        font-size: 16px;
         font-weight: 400;
-        margin-bottom: 1rem;
+        margin-bottom: 15px;
       }
     }
     .aboutImage {
       width: 50%;
+      @include display-style;
       .profilImage {
         margin: auto;
         overflow: hidden;
@@ -48,13 +53,33 @@
 }
 
 @media screen and (max-width: 768px) {
-  .aboutContainer .about {
-    flex-direction: column;
-    .aboutText {
-      width: 100%;
+  .aboutContainer {
+    padding: 20px;
+    h2 {
+      @include style-h2;
+      margin: 0;
     }
-    .aboutImage {
-      width: 100%;
+    .about {
+      gap: 20px;
+      flex-direction: column-reverse;
+      .aboutText {
+        width: 100%;
+        text-align: justify;
+        p {
+          font-size: 16px;
+        }
+        a {
+          align-self: center;
+        }
+      }
+      .aboutImage {
+        width: 100%;
+        margin-top: 20px;
+        .profilImage {
+          width: 80%;
+          height: 250px;
+        }
+      }
     }
   }
 }
