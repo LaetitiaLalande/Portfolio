@@ -4,13 +4,16 @@ import '../ContactForm/ContactForm.scss';
 const ContactForm = () => {
     return (
         <div className='contactContainer'>
-            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+            <form name="contact" method="post" data-netlify="true" onSubmit="submit">
                 <input type="hidden" name="form-name" value="contact" />
-                <label for="name">Nom : <input type="text" name="name" /></label>
+                <label for="name">Nom : </label>
+                <input type="text" name="name" />
 
-                <label for="email">Email: <input type="email" name="email" /></label>
+                <label for="email">Email: </label>
+                <input type="email" name="email" />
 
-                <label for="message">Message: <textarea name="message"></textarea></label>
+                <label for="message">Message: </label>
+                <textarea name="message"></textarea>
 
                 <button type="submit">Envoyer</button>
 

@@ -1,15 +1,11 @@
 import React from 'react';
 import "../Footer/Footer.scss";
-import { FaEnvelope } from 'react-icons/fa';
+
 import IconContact from '../IconContact/IconContact';
 import ContactForm from '../ContactForm/ContactForm';
 
 const Footer = () => {
-  const email = 'laetitia2288@gmail.com';
 
-  const handleClick = () => {
-    window.location.href = `mailto:${email}`;
-  };
   return (
     <div className="sectionContact">
       <hr />
