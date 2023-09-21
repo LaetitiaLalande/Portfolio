@@ -1,1 +1,32 @@
 @import "../../assets/style/index.scss";
+
+.formContainer {
+  width: 100%;
+  margin: 0;
+  @include display-style;
+  justify-content: center;
+  .formContact {
+    @include display-style;
+    flex-direction: column;
+    label {
+      text-align: start;
+    }
+    input,
+    textarea 
+    {
+      margin-bottom: 10px;
+      //   box-shadow: 0 2px 4px rgba(0,0,0,.3);
+      border-radius: 5px;
+      padding: 5px;
+    }
+    .btnSubmit {
+      @include display-style;
+      justify-content: center;
+      button {
+        cursor: pointer;
+        height: 30px;
+        padding: 2px;
+      }
+    }
+  }
+}

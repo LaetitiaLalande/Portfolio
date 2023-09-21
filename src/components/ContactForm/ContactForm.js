@@ -5,21 +5,23 @@ const ContactForm = () => {
 
 
     return (
-        <div className="contactContainer">
-            <form name="contact" method="post">
+        <div className="formContainer">
+            <form name="contact" method="post" className='formContact'>
                 <input type="hidden" name="form-name" value="contact" />
-                <p>
-                    <label>Your Name: <input type="text" name="name" /></label>
-                </p>
-                <p>
-                    <label>Your Email: <input type="email" name="email" /></label>
-                </p>
-                <p>
-                    <label>Message: <textarea name="message"></textarea></label>
-                </p>
-                <p>
-                    <button type="submit">Send</button>
-                </p>
+
+
+                <label htmlFor="name">Nom : </label>
+                <input type="text" name="name" id="name" />
+
+                <label htmlFor="email">Email: </label>
+                <input type="email" name="email" id="email" />
+
+                <label htmlFor="message">Message: </label>
+                <textarea name="message" id="message"></textarea>
+
+                <div className='btnSubmit'>
+                    <button type="submit">Envoyer</button>
+                    </div>
             </form>
         </div>
     );

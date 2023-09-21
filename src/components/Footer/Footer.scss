@@ -25,6 +25,9 @@
     .contactContainer {
       width: 50%;
       text-align: center;
+      .iconEnveloppe {
+        display: none;
+      }
       p {
         margin-bottom: 20px;
       }
@@ -45,6 +48,7 @@
         }
       }
       .contactContainer {
+        margin-top: 20px;
         width: 100%;
         p {
           margin: 5px;
