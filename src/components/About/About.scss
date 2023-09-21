@@ -4,8 +4,13 @@
   @include style-section;
   .titleContainer {
     h2 {
-      @include style-h2;
       margin: 0;
+      margin-bottom: 40px;
+      font-size: 32px;
+      font-weight: 600;
+      cursor: context-menu;
+      text-shadow: -2px 1px 0 #e2e8ec;
+      color: $underline-color;
     }
   }
   .about {
@@ -35,6 +40,7 @@
       width: 50%;
       @include display-style;
       .profilImage {
+        border-radius: 5px;
         margin: auto;
         overflow: hidden;
         width: 80%;
@@ -55,9 +61,8 @@
 @media screen and (max-width: 768px) {
   .aboutContainer {
     padding: 20px;
-    h2 {
-      @include style-h2;
-      margin: 0;
+    .overlinedTitle {
+      display: none;
     }
     .about {
       gap: 20px;
