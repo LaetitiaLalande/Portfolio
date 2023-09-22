@@ -14,23 +14,31 @@ const SkillModal = (props) => {
   };
 
   const outModal = (e) => {
-    if (modalOpen && e.target.classList.contains('modal')) {
+    if (modalOpen && e.target.classList.contains('modalOverlay')) {
       closeModal();
     }
   };
 
   return (
-    <div className="skillCard" onClick={toggleModal}>
-      <h3>{props.title}</h3>
-      <div className='iconContainer'>
+    
+    <div className="skillCard" >
+
+      <h3 onClick={toggleModal}>{props.title}</h3>
+      <div className='iconContainer' onClick={toggleModal}>
+
+        {/* liste des icones skill */}
         {props.icons.map((icon, index) => (
           <div key={index} >
             <img src={icon} alt="icone Skill" className='iconSkill' />
           </div>
         ))}
-        </div>
+
+      </div>
+
       {modalOpen && (
-        <div className="modal" onClick={outModal}>
+        <div className="modalOverlay" onClick={outModal}>
+
+          {/* contenu de la modale */}
           <div className="modalContent ">
             <FaTimes className="btnClose" onClick={toggleModal} />
             <h2>{props.name}</h2>
@@ -40,8 +48,10 @@ const SkillModal = (props) => {
               ))}
             </ul>
           </div>
+
         </div>
       )}
+
     </div>
   );
 };

@@ -2,7 +2,7 @@
 
 .formContainer {
   width: 100%;
-  margin: 0;
+  margin-bottom: 15px;
   @include display-style;
   justify-content: center;
   .formContact {
@@ -12,12 +12,13 @@
       text-align: start;
     }
     input,
-    textarea 
-    {
+    textarea {
       margin-bottom: 10px;
-      //   box-shadow: 0 2px 4px rgba(0,0,0,.3);
       border-radius: 5px;
       padding: 5px;
+    }
+    textarea {
+      resize: none;
     }
     .btnSubmit {
       @include display-style;

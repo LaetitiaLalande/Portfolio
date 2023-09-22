@@ -38,6 +38,7 @@
         margin-right: 15px;
         @include style-icon;
         font-size: 14px;
+        border-bottom: 1px solid $underline-color;
       }
     }
     .detailContainer {

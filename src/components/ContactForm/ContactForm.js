@@ -3,7 +3,6 @@ import '../ContactForm/ContactForm.scss';
 
 const ContactForm = () => {
 
-
     return (
         <div className="formContainer">
             <form name="contact" method="post" className='formContact'>
@@ -17,7 +16,7 @@ const ContactForm = () => {
                 <input type="email" name="email" id="email" />
 
                 <label htmlFor="message">Message: </label>
-                <textarea name="message" id="message"></textarea>
+                <textarea name="message" id="message" rows="5"></textarea>
 
                 <div className='btnSubmit'>
                     <button type="submit">Envoyer</button>

@@ -1,0 +1,24 @@
+@import "../../assets/style/index.scss";
+
+.projectsContainer {
+  @include style-section;
+
+  h2 {
+    @include style-h2;
+  }
+  .projectsGallery {
+    @include display-style;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projectsContainer {
+    padding: 20px;
+    .projectsGallery {
+      gap: 20px;
+    }
+  }
+}

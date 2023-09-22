@@ -15,12 +15,6 @@
     .emailContainer {
       width: 50%;
       text-align: center;
-      p {
-        margin-bottom: 20px;
-      }
-      .iconEnveloppe {
-        @include style-icon;
-      }
     }
     .contactContainer {
       width: 50%;
@@ -43,9 +37,6 @@
       gap: 10px;
       .emailContainer {
         width: 100%;
-        p {
-          margin: 5px;
-        }
       }
       .contactContainer {
         margin-top: 20px;

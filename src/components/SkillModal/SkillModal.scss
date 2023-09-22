@@ -10,13 +10,13 @@
   align-items: center;
   gap: 0 20px;
   border-radius: 10px;
-  cursor: pointer;
   h3 {
     color: $underline-color;
     cursor: pointer;
     font-weight: 600;
   }
   .iconContainer {
+    cursor: pointer;
     @include display-style;
     align-items: center;
     gap: 10px;
@@ -27,7 +27,7 @@
       }
     }
   }
-  .modal {
+  .modalOverlay {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +74,7 @@
 
 @media screen and (max-width: 768px) {
   .skillCard {
-    .modal {
+    .modalOverlay {
       .modalContent {
         width: 90%;
         min-height: 250px;

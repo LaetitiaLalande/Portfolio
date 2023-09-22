@@ -26,9 +26,7 @@ const ProjectDetails = () => {
                 <div className="infosContainer">
 
                     <div className='photoLinkContainer'>
-
                         <CarouselProject images={project.imageCarousel} />
-
                     </div>
 
                     <div className="detailContainer">
@@ -53,7 +51,7 @@ const ProjectDetails = () => {
                             )}
                             <a href={project.gitHubLink} target="_blank" rel="noopener noreferrer">Lien Github</a>
                         </div>
-                        
+
                     </div>
 
                 </div>

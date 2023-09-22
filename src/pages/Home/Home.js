@@ -5,7 +5,7 @@ import Footer from '../../components/Footer/Footer';
 import Intro from '../../components/Intro/Intro';
 import About from '../../components/About/About';
 import Skills from '../../components/Skills/Skills';
-import Projects from '../../components/Projects/Projects';
+import ProjectsGallery from '../../components/ProjectsGallery/ProjectsGallery';
 
 const Home = () => {
     return (
@@ -19,7 +19,7 @@ const Home = () => {
                     <About />
                 </section>
                 <section id="sectionPortfolio">
-                    <Projects />
+                    <ProjectsGallery />
                 </section>
                 <section id="sectionSkills">
                     <Skills />
