@@ -11,10 +11,12 @@
       text-align: start;
     }
     input,
-    textarea {
+    textarea,
+    button {
       margin-bottom: 10px;
       border-radius: 5px;
       padding: 5px;
+      border: 1px solid $color-icon;
     }
     textarea {
       resize: none;
@@ -24,8 +26,12 @@
       justify-content: center;
       button {
         cursor: pointer;
-        height: 30px;
         padding: 2px;
+        &:hover {
+          background-color: $underline-color;
+          color: $color-principale;
+          border-radius: 5px;
+        }
       }
     }
   }
