@@ -11,7 +11,7 @@
   }
   .infos {
     @include display-style;
-    justify-content: space-around;
+    align-items: center;
     .emailContainer {
       width: 50%;
       text-align: center;

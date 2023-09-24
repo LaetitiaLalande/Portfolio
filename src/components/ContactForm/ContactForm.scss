@@ -1,10 +1,9 @@
 @import "../../assets/style/index.scss";
 
 .formContainer {
-  width: 100%;
+  width: 90%;
   margin-bottom: 15px;
-  @include display-style;
-  justify-content: center;
+  margin: auto;
   .formContact {
     @include display-style;
     flex-direction: column;

@@ -5,7 +5,6 @@ import IconContact from '../IconContact/IconContact';
 import ContactForm from '../ContactForm/ContactForm';
 
 const Footer = () => {
-
   return (
     <div className="sectionContact">
       <hr />

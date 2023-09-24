@@ -18,7 +18,7 @@ const ProjectDetails = () => {
     return (
         <div className='ProjectDetailContainer'>
             <div className='headerContainer'>
-                <Link to="/" className='linkToHome'>Retour à l'accueil</Link>
+                <Link to="/" className='linkToHome'>Retour</Link>
             </div>
             <div className='mainProjectDetail'>
                 <h2>{project.title}</h2>

@@ -20,7 +20,7 @@ const ContactForm = () => {
 
                 <div className='btnSubmit'>
                     <button type="submit">Envoyer</button>
-                    </div>
+                </div>
             </form>
         </div>
     );
