@@ -13,10 +13,10 @@ const IconContact = () => {
     return (
         <div className="socialIcons">
             <FaEnvelope onClick={handleClick} className='iconEnveloppe' />
-            <a href="https://github.com/LaetitiaLalande" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/LaetitiaLalande" title="lien github" target="_blank" rel="noopener noreferrer">
                 <FaGithub className='iconGithub' />
             </a>
-            <a href="https://www.linkedin.com/in/laetitia-lalande-6a60a9259" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/laetitia-lalande-6a60a9259" title="lien linkedin" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
             </a>
         </div>

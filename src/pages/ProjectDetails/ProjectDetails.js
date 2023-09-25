@@ -13,8 +13,6 @@ const ProjectDetails = () => {
         return <div>Projet non trouvé</div>;
     }
 
-
-
     return (
         <div className='ProjectDetailContainer'>
             <div className='headerContainer'>
