@@ -17,11 +17,11 @@ export const DataSkills = [
   {
     id: 2,
     title: 'Developpement FrontEnd',
-    icon:[
+    icon: [
       "../js.png",
       "../React-icon.svg.png",
     ],
-    name: 'Javscript, React',
+    name: 'Javascript, React',
     description:
       [
         "Manipuler les éléments du DOM",
